@@ -7,6 +7,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+ul, ol, li {
+  list-style: none;
+}
 :root{
   --color-white: #fff;
   --color-light-gray: #C4C4C4;
