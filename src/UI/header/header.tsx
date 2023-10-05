@@ -4,13 +4,11 @@ import styled from 'styled-components';
 import avatar from '../../BLL/images/hz.png'
 
 const HeaderS = styled.header`
-height: 180px;
+height: 60px;
 width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: absolute;
-z-index: 3;
 .menu__list{
   display: flex;
   gap: 30px;
@@ -35,6 +33,11 @@ export const Header: FC = () => {
     <HeaderS>
       <nav className='menu'>
         <ul className="menu__list">
+          <li className="menu__item">
+            <NavLink to={'/'}>
+              <img src={avatar} alt="" />
+            </NavLink>
+          </li>
           <li className="menu__item">
             <NavLink to={'aboutus'}>О НАС </NavLink>
           </li>

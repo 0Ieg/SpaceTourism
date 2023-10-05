@@ -11,7 +11,7 @@ const CompanyS = styled.article`
 export const Company:FC<{name:string, achievement:string}> = (props) => {
   const {name, achievement} = props
   return (
-    <CompanyS>
+    <CompanyS id='aboutus'>
       <img className='image' src="" alt="" />
       <div className="information">
         <div className="companyName">{name}</div>
