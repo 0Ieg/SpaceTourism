@@ -1,9 +1,13 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import { Button } from '../templates/button';
+import bi from '../../BLL/images/background1.png'
 
 const StartSectionS = styled.section`
-height: 100dvh;
+height: 100%;
+display: flex;
+align-items: center;
+position: relative;
 `
 export const StartSection: FC = () => {
   return (
