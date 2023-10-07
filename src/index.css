@@ -13,13 +13,10 @@ ul, ol, li {
 :root{
   --color-white: #fff;
   --color-light-gray: #C4C4C4;
-  --color-red: #CB0E0E;
+  --color-pink: #d59898;
 }
 [class*=container]{
   max-width: 1300px;
   padding: 0 50px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }

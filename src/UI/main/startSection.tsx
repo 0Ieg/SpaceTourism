@@ -4,7 +4,7 @@ import { Button } from '../templates/button';
 import bi from '../../BLL/images/background1.png'
 
 const StartSectionS = styled.section`
-height: 100%;
+height: 100dvh;
 display: flex;
 align-items: center;
 position: relative;

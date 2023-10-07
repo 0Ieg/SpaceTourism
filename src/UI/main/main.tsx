@@ -9,7 +9,6 @@ import { ContactsAndGuarantees } from './contactsAndGuarantees';
 import { News } from './news';
 
 const MainS = styled.main`
-flex-grow: 1;
 `
 export const Main: FC = () => {
   return (
