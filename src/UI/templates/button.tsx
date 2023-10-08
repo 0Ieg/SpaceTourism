@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ButtonS = styled.button`
 /* background-color: transparent; */
-background-color: #37818d;
+background-color: transparent;
 border: 1px solid var(--color-light-gray);
 transition: border-color 0.1s linear;
 cursor: pointer;

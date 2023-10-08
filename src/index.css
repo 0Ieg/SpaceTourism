@@ -20,3 +20,9 @@ ul, ol, li {
   padding: 0 50px;
   margin: 0 auto;
 }
+@font-face {
+  font-family: 'SpaceAge';
+  src: url('./BLL/fonts/spaceagecyrillic_regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}

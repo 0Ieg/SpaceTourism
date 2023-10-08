@@ -1,19 +1,55 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import { Button } from '../templates/button';
-import bi from '../../BLL/images/background1.png'
+
 
 const StartSectionS = styled.section`
 height: 100dvh;
-display: flex;
-align-items: center;
+display: grid;
+grid-template-columns: 600px 1fr;
 position: relative;
+background-color: #696060;
+.left{
+  align-self: center;
+  .name{
+    text-transform: lowercase;
+    color: var(--color-white);
+    .name__top{
+      font: 400 60px SpaceAge;
+    }
+    .name__bottom{
+      font: 400 110px SpaceAge;
+    }
+  }
+  .allegations{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: var(--color-white);
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+}
+.information{
+  align-self: end;
+  margin: 0 auto 140px;
+  display: flex;
+  gap: 52px;
+  color: var(--color-white);
+  font-size: 14px;
+  & div{
+    width: 165px;
+  }
+}
 `
 export const StartSection: FC = () => {
   return (
     <StartSectionS>
       <article className='left'>
-        <div className="name"></div>
+        <div className="name">
+          <div className="name__top">космический</div>
+          <div className="name__bottom">туризм</div>
+        </div>
         <div className="allegations">
           <span>Будущее уже наступило!</span>
           <span>Осуществи мечту детства!</span>
