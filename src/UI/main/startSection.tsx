@@ -8,7 +8,6 @@ height: 100dvh;
 display: grid;
 grid-template-columns: 600px 1fr;
 position: relative;
-background-color: #696060;
 .left{
   align-self: center;
   .name{
