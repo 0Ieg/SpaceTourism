@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { Button } from '../templates/button';
 import { StartSection } from './startSection';
 import { AboutUs } from './aboutUs';
 import { Route, Routes } from 'react-router-dom';

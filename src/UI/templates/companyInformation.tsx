@@ -2,7 +2,11 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 const CompanyS = styled.article`
+color: var(--color-white);
 .information{
+  .companyName{
+    font: 700 30px SFPro;
+  }
   .achievement{
     text-transform: uppercase;
   }

@@ -4,8 +4,10 @@ import { Company } from '../templates/companyInformation';
 
 const AboutUsS = styled.section`
 .title{
-  text-transform: uppercase;
-  font: 400 48px serif;
+  text-transform: lowercase;
+  font: 400 48px SpaceAge;
+  color: var(--color-white);
+  padding: 96px 0 48px;
 }
 `
 export const AboutUs: FC = () => {
