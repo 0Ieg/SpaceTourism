@@ -14,6 +14,7 @@ ul, ol, li {
   --color-white: #fff;
   --color-light-gray: #C4C4C4;
   --color-pink: #d59898;
+  --color-blue: #036CCA;
 }
 [class*=container]{
   max-width: 1300px;
