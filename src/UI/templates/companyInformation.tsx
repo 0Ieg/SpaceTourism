@@ -3,8 +3,14 @@ import styled from 'styled-components';
 
 const CompanyS = styled.article`
 color: var(--color-white);
+display: flex;
+justify-content: space-between;
+&>*:not(:last-child){
+    margin-bottom: 150px;
+}
 .information{
   max-width: 600px;
+  width: 100%;
   .companyName{
     font: 700 30px SFPro;
   }
@@ -25,12 +31,12 @@ color: var(--color-white);
   }
 }
 `
-type PropsType = {name:string, achievement:string, news:{new1:string, new2:string, new3:string}}
+type PropsType = {name:string, achievement:string, img: any, news:{new1:string, new2:string, new3:string}}
 export const Company:FC<PropsType> = (props) => {
-  const {name, achievement, news} = props
+  const {name, achievement, img, news} = props
   return (
     <CompanyS id='aboutus'>
-      <img className='image' src="" alt="" />
+      <img className='image' src={img} alt="" />
       <div className="information">
         <div className="companyName">{name}</div>
         <div className="achievement">{achievement}</div>

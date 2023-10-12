@@ -20,6 +20,8 @@ height: 60px;
   display: flex;
   gap: 30px;
   align-items: center;
+  font: 400 16px SFPro;
+  text-transform: uppercase;
   .menu__item{
     color: var(--color-white);
     transition: all 0.1s linear;
@@ -30,7 +32,8 @@ height: 60px;
   align-items: center;
   gap: 20px;
   .phone{
-    font: 400 20px serif;
+    font: 400 20px SFPro;
+    color: var(--color-white);
   }
   .avatar{
 
