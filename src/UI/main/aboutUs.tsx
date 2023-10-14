@@ -1,9 +1,11 @@
 import { FC } from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Company } from '../templates/companyInformation';
 import vg from '../../BLL/images/vg.png'
 import bo from '../../BLL/images/bo.png'
 import sx from '../../BLL/images/sx.png'
+import { StateType } from '../../BLL/store/store';
 
 const AboutUsS = styled.section`
 .title{
@@ -45,12 +47,13 @@ const spaceX = {
   img: sx,
 }
 export const AboutUs: FC = () => {
+  const companies = useSelector((state:StateType)=>state.aboutUs)
   return (
     <AboutUsS>
       <div className='title'>О нас</div>
-      <Company {...virginGalactic}/>
-      <Company {...blueOrigin}/>
-      <Company {...spaceX}/>
+      <Company {...companies.virginGalactic}/>
+      <Company {...companies.blueOrigin}/>
+      <Company {...companies.spaceX}/>
     </AboutUsS>
   )
 }

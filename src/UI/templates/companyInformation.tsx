@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
+import { CompanyType } from '../../BLL/store/aboutUsSlice';
 
 const CompanyS = styled.article`
 color: var(--color-white);
@@ -31,19 +32,18 @@ justify-content: space-between;
   }
 }
 `
-type PropsType = {name:string, achievement:string, img: any, news:{new1:string, new2:string, new3:string}}
-export const Company:FC<PropsType> = (props) => {
-  const {name, achievement, img, news} = props
+
+export const Company:FC<CompanyType> = (props) => {
   return (
     <CompanyS id='aboutus'>
-      <img className='image' src={img} alt="" />
+      <img className='image' src={props.image} alt="" />
       <div className="information">
-        <div className="companyName">{name}</div>
-        <div className="achievement">{achievement}</div>
+        <div className="companyName">{props.name}</div>
+        <div className="achievement">{props.achievement}</div>
         <div className="news">
-          <div className="new">{news.new1}</div>
-          <div className="new">{news.new2}</div>
-          <div className="new">{news.new3}</div>
+          <div className="new">{props.news.new1}</div>
+          <div className="new">{props.news.new2}</div>
+          <div className="new">{props.news.new3}</div>
         </div>
       </div>
     </CompanyS>
