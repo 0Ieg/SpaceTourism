@@ -21,6 +21,12 @@ position: relative;
   background-position: bottom;
   background-size: cover;
 }
+&.bi5{
+  background-image: url(${bi5});
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #010203;
+}
 .container{
   position: relative;
   z-index: 3;
@@ -33,6 +39,14 @@ position: relative;
   z-index: 2;
   bottom: 0;
 }
+.lg5{
+  height: 435px;
+  width: 100%;
+  background: linear-gradient(#010203, rgba(1, 2, 3, 0), #010203);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+}
 `
 export const App: FC = () => {
   const url = useLocation().pathname
@@ -40,12 +54,14 @@ export const App: FC = () => {
   const bi = ()=>{
     switch(url){
       case '/': return 'bi1';
-      case '/aboutus': return'bi2'
+      case '/aboutus': return'bi2';
+      case '/guarantees': return 'bi5';
     }
   }
   const lg = ()=>{
     switch(url){
-      case '/': return 'lg1'
+      case '/': return 'lg1';
+      case '/guarantees': return 'lg5';
     }
   }
   return (
