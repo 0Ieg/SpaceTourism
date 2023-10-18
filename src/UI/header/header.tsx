@@ -59,6 +59,9 @@ export const Header: FC = () => {
               <NavLink to={'aboutus'}>О НАС </NavLink>
             </li>
             <li className="menu__item">
+              <NavLink to={'program'}>Программа</NavLink>
+            </li>
+            <li className="menu__item">
               <NavLink to={'price'}>СТОИМОСТЬ</NavLink>
             </li>
             <li className="menu__item">
