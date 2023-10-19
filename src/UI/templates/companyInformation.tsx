@@ -8,6 +8,10 @@ color: var(--color-white);
 display: flex;
 gap: 20px;
 justify-content: space-between;
+.image{
+  box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #fff;
+  border-radius: 5px;
+}
 .information{
   max-width: 600px;
   width: 100%;

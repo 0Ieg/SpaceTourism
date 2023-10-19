@@ -23,7 +23,7 @@ position: relative;
   .allegations{
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font: 400 24px SFPro;
     color: var(--color-white);
     margin-top: 15px;
     margin-bottom: 50px;
@@ -35,7 +35,7 @@ position: relative;
   display: flex;
   gap: 52px;
   color: var(--color-white);
-  font-size: 14px;
+  font: 400 14px SFPro;
   & div{
     width: 165px;
   }

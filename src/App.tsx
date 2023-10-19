@@ -11,6 +11,7 @@ import { useLocation } from 'react-router-dom';
 
 const AppS = styled.div`
 position: relative;
+background-color: #000;
 &.bi1{
   background-image: url(${bi1});
   background-position: right;
@@ -49,7 +50,7 @@ position: relative;
 .lg3{
   height: 600px;
   width: 100%;
-  background: linear-gradient(#010203, rgba(1, 2, 3, 0), #010203);
+  background: linear-gradient(#010203, #0102037f, #010203);
   position: absolute;
   z-index: 2;
   bottom: 0;
