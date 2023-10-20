@@ -4,7 +4,7 @@ import { Header } from './UI/header/header';
 import { Main } from './UI/main/main';
 import bi1 from './BLL/images/background1.png'
 import bi2 from './BLL/images/background2.jpg'
-import bix from './BLL/images/background3.png'
+import bi4 from './BLL/images/background3.png'
 import bi3 from './BLL/images/background4.png'
 import bi5 from './BLL/images/background5.png'
 import { useLocation } from 'react-router-dom';
@@ -27,6 +27,12 @@ background-color: #000;
   background-position: bottom;
   background-size: 100% 600px;
   background-repeat: no-repeat;
+  background-color: #010203;
+}
+&.bi4{
+  background-image: url(${bi4});
+  background-position: top left;
+  background-size: cover;
   background-color: #010203;
 }
 &.bi5{
@@ -72,6 +78,7 @@ export const App: FC = () => {
       case '/': return 'bi1';
       case '/aboutus': return'bi2';
       case '/program': return 'bi3';
+      case '/price' : return 'bi4';
       case '/guarantees': return 'bi5';
       case '/program': return 'bi3';
     }

@@ -7,6 +7,7 @@ import { OffersAndServices } from './offersAndServices';
 import { ContactsAndGuarantees } from './contactsAndGuarantees';
 import { News } from './news';
 import { Program } from './program';
+import { Price } from './price';
 
 const MainS = styled.main`
 `
@@ -17,7 +18,7 @@ export const Main: FC = () => {
         <Route path='' element={<StartSection />}/>
         <Route path='aboutus' element={<AboutUs />}/>
         <Route path='program' element={<Program/>}/>
-        <Route path='price' element={<OffersAndServices/>}/>
+        <Route path='price' element={<Price/>}/>
         <Route path='services' element={<OffersAndServices/>}/>
         <Route path='guarantees' element={<ContactsAndGuarantees/>}/>
         <Route path='news' element={<News/>}/>
