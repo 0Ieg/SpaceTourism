@@ -70,9 +70,6 @@ export const Header: FC = () => {
             <li className="menu__item">
               <NavLink to={'guarantees'}>ГАРАНТИИ</NavLink>
             </li>
-            <li className="menu__item">
-              <NavLink to={'news'}>НОВОСТИ</NavLink>
-            </li>
           </ul>
         </nav>
         <div className="contact">
