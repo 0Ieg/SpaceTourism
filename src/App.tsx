@@ -80,7 +80,7 @@ export const App: FC = () => {
       case '/program': return 'bi3';
       case '/price' : return 'bi4';
       case '/guarantees': return 'bi5';
-      case '/program': return 'bi3';
+      case '/services': return 'bi2';
     }
   }
   const lg = ()=>{

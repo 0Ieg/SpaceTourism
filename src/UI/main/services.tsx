@@ -12,10 +12,16 @@ min-height: 100dvh;
   text-transform: lowercase;
 }
 .x{
+  display: grid;
+  grid-template-columns: 1fr minmax(290px, 500px);
+  align-items: center;
   .description{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    .essence{
+      font: 400 24px SFPro;
+    }
     .components{
       font: 400 24px SFPro;
       .component{
@@ -28,6 +34,7 @@ min-height: 100dvh;
           margin-right: 15px;
           background-color: var(--color-white);
           border-radius: 50%;
+          flex-shrink: 0;
         }
       }
     }
@@ -48,6 +55,19 @@ min-height: 100dvh;
     }
   }
 }
+.album{
+  .slider{
+    border: 2px solid var(--color-white);
+    width: 100%;
+    height: 650px;
+    margin: 50px 0 50px 0;
+  }
+  .advice{
+    font: 400 24px SpaceAge;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+}
 `
 export const Services: FC = () => {
   return (
@@ -55,6 +75,7 @@ export const Services: FC = () => {
       <div className="title">Дополнительные <br/>услуги</div>
       <div className="x">
         <div className="description">
+          <div className="essence">С Вами полетит профессиональный фотограф</div>
           <ul className="components">
             <li className="component">20 фотографий в профессиональной обработке</li>
             <li className="component">фото книга</li>
@@ -67,6 +88,10 @@ export const Services: FC = () => {
           <Button size='middle' title='ХОЧУ И ДИСК'/>
           <img src={astronaut} alt="" className="astronaut"/>
         </div>
+      </div>
+      <div className="album">
+        <div className="slider"></div>
+        <div className="advice">Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.</div>
       </div>
     </Styled>
   )
