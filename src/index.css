@@ -15,6 +15,7 @@ body{
 }
 :root{
   --color-white: #fff;
+  --color-black: #000;
   --color-light-gray: #C4C4C4;
   --color-red: #c03c3c;
   --color-pink: #d59898;

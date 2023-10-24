@@ -2,6 +2,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 import { Button } from '../templates/button';
 import astronaut from '../../BLL/images/astronaut.png'
+import { Slider } from '../templates/slider';
 
 const Styled = styled.section`
 color: var(--color-white);
@@ -56,12 +57,6 @@ min-height: 100dvh;
   }
 }
 .album{
-  .slider{
-    border: 2px solid var(--color-white);
-    width: 100%;
-    height: 650px;
-    margin: 50px 0 50px 0;
-  }
   .advice{
     font: 400 24px SpaceAge;
     text-align: center;
@@ -90,7 +85,7 @@ export const Services: FC = () => {
         </div>
       </div>
       <div className="album">
-        <div className="slider"></div>
+        <Slider/>
         <div className="advice">Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.</div>
       </div>
     </Styled>
